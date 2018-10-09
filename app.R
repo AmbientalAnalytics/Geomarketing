@@ -12,7 +12,7 @@ library(scales)
 library(plyr)
 
 # Loading Data ----
-Demo <- read.xlsx("./Demo GeoMKT Taurus_FELIPE.xlsx")
+Demo <- read.xlsx("./Demo_GeoMKT.xlsx")
 #Indice <- read.xlsx("./indice.xlsx")
 # Organizing
 Demo$Lat <- as.numeric(sapply(strsplit(as.character(Demo$GPS), " "), "[[", 2))
@@ -50,7 +50,7 @@ IndiceCliente <- tabla_clientes %>%
   mutate_if(is.numeric, funs(replace(., is.na(.), 0)))
 
 # UI ----
-ui <- navbarPage("Geomarketing Taurus",
+ui <- navbarPage("Geomarketing",
 #Panel general ----
                  tabPanel("Análisis General",
                           sidebarLayout(
