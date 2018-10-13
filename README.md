@@ -1,1 +1,2 @@
-# Geomarketing
+# Geomarketing Dashboard
+Geomarketing dashboard demonstration
